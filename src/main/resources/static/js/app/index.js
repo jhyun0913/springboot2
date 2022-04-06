@@ -54,6 +54,7 @@ var main = {
             alert(JSON.stringify(error));
         });
     },
+
     delete : function () {
         var id = $('#id').val();
 
@@ -64,11 +65,12 @@ var main = {
             contentType:'application/json; charset=utf-8'
         }).done(function() {
             alert('글이 삭제되었습니다.');
-            window.location.href = '/'; // 1
+            window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
     }
+
 
 };
 
